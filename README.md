@@ -2,10 +2,6 @@
 
 Claude Code plugin that draws Mermaid diagrams as Unicode box-drawing art in the terminal, fully offline.
 
-## Why
-
-Built as a companion to HumanLayer's [show-me](https://www.skills.sh/humanlayer/skills/show-me) skill, which has Claude explain the current topic visually with concise diagrams. Its Mermaid diagrams arrive as source in the terminal; with this plugin they are drawn in place.
-
 - **MessageDisplay hook**: every ```` ```mermaid ```` block in Claude's replies is replaced on screen by its drawing as it streams. The block is held back until its closing fence arrives. A diagram that is unsupported, broken or wider than the terminal stays as source with a one-line reason. Display-only: the transcript and what Claude sees keep the original text.
 - **Skill** `render-mermaid`: tells Claude when to draw diagrams and how to check one (or render a file) before replying.
 
@@ -40,6 +36,8 @@ node --test scripts/render-mermaid.test.mjs
 ## Credits
 
 `scripts/grok-mermaid.wasm` is the prebuilt module from [simonw/tools `grok-mermaid`](https://github.com/simonw/tools/tree/main/grok-mermaid): the Mermaid renderer from [xai-org/grok-build](https://github.com/xai-org/grok-build) compiled to WebAssembly, Copyright 2023-2026 SpaceXAI, Apache-2.0. The module is redistributed unmodified; see `NOTICE` and `LICENSE`.
+
+Pairs well with HumanLayer's [show-me](https://www.skills.sh/humanlayer/skills/show-me) skill.
 
 ## License
 
