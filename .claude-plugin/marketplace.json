@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-mermaid",
+  "description": "Mermaid diagrams rendered in the terminal",
+  "owner": {
+    "name": "Germán Castro Montes",
+    "url": "https://github.com/gecm0"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-mermaid",
+      "description": "Renders Mermaid diagrams as Unicode box-drawing art in the Claude Code terminal.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
