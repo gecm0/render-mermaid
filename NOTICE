@@ -1,0 +1,20 @@
+render-mermaid
+Copyright 2026 Germán Castro Montes
+
+This product bundles scripts/grok-mermaid.wasm, redistributed unmodified from
+https://github.com/simonw/tools/tree/main/grok-mermaid (Apache License 2.0).
+
+That module contains:
+
+- The Mermaid terminal renderer from https://github.com/xai-org/grok-build
+  (crates/codegen/xai-grok-markdown/src/mermaid.rs).
+  Copyright 2023-2026 SpaceXAI. Licensed under the Apache License 2.0.
+
+- The WebAssembly wrapper and build by Simon Willison
+  (https://github.com/simonw/tools). Licensed under the Apache License 2.0.
+
+- The unicode-width crate (https://github.com/unicode-rs/unicode-width).
+  Copyright the unicode-width developers. Licensed under MIT or Apache-2.0,
+  used here under the Apache License 2.0.
+
+The full text of the Apache License 2.0 is in LICENSE.

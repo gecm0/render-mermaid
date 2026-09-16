@@ -1,0 +1,16 @@
+{
+  "description": "Render ```mermaid blocks in Claude's replies with Unicode drawings",
+  "hooks": {
+    "MessageDisplay": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/render-mermaid.mjs\" --hook",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
